@@ -1,0 +1,142 @@
+/*Globales*/
+html {
+    box-sizing: border-box; /*Agregar un width a un elemento y luego un padding no modifica el tam. del elemento (content-box defecto)*/
+    font-size: 62.5%; /*10px = 1rem*/
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.35;
+}
+
+h1, h2 ,h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2, h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #222831;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Header*/
+.titulo {
+    text-align: center;
+    margin: 6rem 0 4rem 0;
+}
+
+.titulo h1 {
+    color: #222831;
+}
+
+.titulo h2 {
+    color: #393E46;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+}
+
+/*Nav*/
+.contenedor-navegacion {
+    border-top: .1rem solid #EEEEEE;
+}
+
+.navegacion {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+/*Imágen principal*/
+.hero {
+    background-image: url(../img/principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 40rem;
+}
+
+/*Menus*/
+.contenedor-menus {
+    text-align: center;
+}
+
+.contenedor-menus h3 {
+    color: #222831;
+    margin: 6rem 0 0 0; 
+}
+
+.contenedor-menus h4 {
+    color: #393E46;
+    margin: 0 0 4rem 0; 
+}
+
+.menus img {
+    width: 30rem;
+}
+
+.menus {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 140rem;
+}
+
+.menus img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    max-width: 1200px;
+}
+
+.menus div p {
+    background-color: #00ADB5;
+    color: #fff;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin: 0 0;
+}
+
+/*Sobre nosotros*/
+.contenedor-nosotros {
+    margin-top: 8rem;
+    background-image: linear-gradient(to right, transparent 30%, #EEE 50% 100%), url(../img/nosotros.png);
+    padding: 9rem;
+    background-position: left center;
+    background-size: 100%, 110rem;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+
+}
+
+.nosotros-texto {
+    color: #222831;
+    grid-column: 2 / 3;
+
+}
